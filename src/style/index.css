@@ -1,0 +1,277 @@
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  .App {
+    box-sizing: border-box;
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 4vh;
+    padding-right: 5vw;
+    padding-left: 5vw;
+    margin-top: 3vw;
+    margin-right: auto;
+    margin-bottom: 2vw;
+    margin-left: auto;
+    font-family: 'Chivo', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #aaa;
+    line-height: 1.8em;
+    letter-spacing: .02em;
+    opacity: 1;
+    transition: opacity 140ms cubic-bezier(.55,.06,.68,.19);
+    
+  }
+
+  .header-logo {
+    font-family: 'Hind Siliguri', sans-serif;
+    color: black;
+    font-size: 3.25rem;
+    font-weight: 900;
+    margin-right: 2rem;
+  }
+
+  .welcome-section {
+    box-sizing: border-box;
+    background: radial-gradient(circle at center, #EEE9E3, #e9e3dd, #EEE9E3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    width: 100%;
+    height: 40vh;
+    margin-right: 5vw;
+    margin-bottom: auto;
+    margin-left: auto;
+}
+
+.welcome-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+  .download-button {
+    box-sizing: border-box;
+    background: white;
+    border: 1.5px solid red;
+    color: red;
+    padding: 10px 40px;
+    font-size: 1.5em;
+    cursor: pointer;
+    font-family: 'Hind Siliguri', sans-serif;
+    transition: background 0.3s;
+    width: 20rem;
+    height: 5rem;
+  }
+
+  .project-card {
+    box-sizing: border-box;
+    background: white;
+    color:black;  
+    font-size: 1.5em;
+    font-family: 'Hind Siliguri', sans-serif;
+    transition: background 0.3s;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .download-button:hover {
+    background: red;
+    color: white;
+  }
+
+  .project-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .project-card h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+  }
+
+  .download-button {
+    margin-top: auto;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+
+  .resume-bar {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 8vh;
+    padding-right: 5vw;
+    padding-left: 5vw;
+    margin-top: 1vw;
+    margin-right: auto;
+    margin-bottom: 1vw;
+    margin-left: auto;
+    font-family: 'Chivo', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+  }
+
+  .icon-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    padding: 10px 0;
+    grid-gap: 4rem;
+  }
+
+  .icon {
+    width: 100%;
+    height: auto;
+  }
+
+  .project-container {
+    display: flex;
+    align-items: stretch; /* Add this */
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    width: 100%;
+    padding: 10px 0;
+    grid-gap: 4rem;
+    
+  }
+
+  
+  .work-history {
+    display: grid;
+    align-items: stretch; 
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    width: 60%;  
+    padding: 10px 0;
+    grid-gap: 1rem;
+    
+
+    
+    text-rendering: optimizeLegibility;
+    word-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.6em;
+    letter-spacing: .03em;
+    text-transform: none;
+    color: #333;
+    margin-top: 0;
+    white-space: pre-wrap;
+  }
+  
+  .resume-menu-bar {
+    box-sizing: border-box;
+    display: grid;
+    width: 100%;
+    height: 8vh;
+    
+    margin-top: 1vw;
+    margin-right: auto;
+    margin-bottom: 1vw;
+    margin-left: auto;
+    font-family: 'Chivo', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    justify-items: center;
+    align-items: center;
+  }
+  .resume-menu {
+    text-decoration: none;
+    color: inherit;
+    display: grid;
+    align-items: stretch; 
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    width: 60%;  
+    padding: 10px 0;
+    grid-gap: 1rem;
+    
+
+    
+    text-rendering: optimizeLegibility;
+    word-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.6em;
+    letter-spacing: .03em;
+    text-transform: none;
+    color: rgb(222, 222, 225);;
+    margin-top: 0;
+    white-space: pre-wrap;
+  }
+
+  .resume-menu a {
+    text-decoration: none;
+    color: inherit;
+}
+  .project-bar {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50vh;
+    padding-right: 5vw;
+    padding-left: 5vw;
+    margin-top: 3vw;
+    margin-right: auto;
+    margin-bottom: 2vw;
+    margin-left: auto;
+    font-family: 'Chivo', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+  }
+
+  .work-history-bar {
+    box-sizing: border-box;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    font-family: 'Chivo', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+  }
+
+  .myRole {
+    grid-column: span 2;
+  }
+
+
+  .resume-menu a.active {
+    color: black;
+}
+  
+  
